@@ -8,7 +8,7 @@ app.use(helmet());
 app.use(express.json());
 app.use(cors());
 
-app.use("/", api);
+app.use("/mahabub", api);
 
 app.use((error, req, res, next) => {
   res.status(error.status).json({ message: error.message });
